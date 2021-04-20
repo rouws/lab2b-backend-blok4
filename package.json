@@ -1,0 +1,26 @@
+{
+  "name": "lab2a-backend-blok4",
+  "version": "1.0.0",
+  "description": "dit is een demo voor lab 2a over express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rouws/lab2a-backend-blok4.git"
+  },
+  "keywords": [
+    "express",
+    "hello",
+    "world",
+    "routing"
+  ],
+  "author": "Sonja Rouwhorst",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rouws/lab2a-backend-blok4/issues"
+  },
+  "homepage": "https://github.com/rouws/lab2a-backend-blok4#readme"
+}
