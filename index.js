@@ -60,13 +60,13 @@ app.get('/movies', (req, res) => {
 });
 
 app.get('/movies/:movieId/:slug', (req, res) => {
-  res.send(`<h1>This will become a detail page for ${req.params.slug}</h1>`)
+  const currentMovie = movies.find((movie) => movie.id == req.params.movieId)
+  res.render('moviedetail', {title: `Details of ${currentMovie.name}`, movie: currentMovie})
 });
 
 app.use(function (req, res, next) {
     res.status(404).send("Sorry can't find that!")
 })
-
 
 
 
