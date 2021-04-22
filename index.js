@@ -49,14 +49,14 @@ const movies = [{
 
 
 app.use(express.static('public'))
-
+app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
   res.send('Hello World woohoo!')
 });
 
 app.get('/movies', (req, res) => {
-  res.send('<h1>This will become a list of movies</h1>')
+  res.render('movielist', {title: "All movies", movies})
 });
 
 app.get('/movies/:movieId/:slug', (req, res) => {
