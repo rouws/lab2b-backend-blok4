@@ -10,3 +10,29 @@ dt {
 dd {
     margin: 0 0 1em 0;
 }
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 1em;
+}
+
+nav li {
+    margin: 0;
+    padding: 1em 3em;
+    border-right: 1px solid cadetblue;
+}
+
+nav li:first-child {
+    border-left: 1px solid cadetblue;
+}
+
+nav a {
+    text-decoration: none;
+    color: cadetblue
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
