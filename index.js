@@ -2,6 +2,10 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
+
+app.use(express.static('public'))
+
+
 app.get('/', (req, res) => {
   res.send('Hello World woohoo!')
 });
@@ -17,6 +21,9 @@ app.get('/movies/:movieId/:slug', (req, res) => {
 app.use(function (req, res, next) {
     res.status(404).send("Sorry can't find that!")
 })
+
+
+
 
 
 app.listen(port, () => {
